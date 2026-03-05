@@ -1,0 +1,3 @@
+.sidebar { width: 220px; background: #fff; border-right: 1px solid #e7eef7; padding: .75rem; }
+a { border-radius: 10px; }
+@media (max-width: 900px) { .sidebar { width: 72px; } span { display: none; } }
