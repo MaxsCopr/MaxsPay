@@ -1,0 +1,28 @@
+.layout {
+  display: flex;
+  min-height: calc(100vh - 64px);
+}
+
+.content {
+  flex: 1;
+  padding: 1rem;
+  background: #f5f8fc;
+}
+
+.auth-content {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0d47a1, #1b5e20);
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    min-height: calc(100vh - 56px);
+  }
+
+  .content {
+    padding: 0.75rem;
+  }
+}

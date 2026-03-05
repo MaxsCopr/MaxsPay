@@ -1,0 +1,13 @@
+<app-header *ngIf="showLayout()"></app-header>
+<div class="layout" *ngIf="showLayout(); else authLayout">
+  <app-sidebar></app-sidebar>
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+</div>
+
+<ng-template #authLayout>
+  <main class="auth-content">
+    <router-outlet></router-outlet>
+  </main>
+</ng-template>
